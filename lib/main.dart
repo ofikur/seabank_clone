@@ -67,13 +67,21 @@ class _HomePageState extends State<HomePage> {
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 4.0),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            _buildNavItem(Icons.home, 'Beranda', true),
-            _buildNavItem(Icons.swap_horiz, 'Bayar/Transfer', false),
+            Expanded(child: _buildNavItem(Icons.home, 'Beranda', true)),
+            Expanded(
+              child: _buildNavItem(Icons.swap_horiz, 'Bayar/Transfer', false),
+            ),
             const SizedBox(width: 40),
-            _buildNavItem(Icons.monetization_on_outlined, 'Deposito', false),
-            _buildNavItem(Icons.person_outline, 'Saya', false),
+            Expanded(
+              child: _buildNavItem(
+                Icons.monetization_on_outlined,
+                'Deposito',
+                false,
+              ),
+            ),
+            Expanded(child: _buildNavItem(Icons.person_outline, 'Saya', false)),
           ],
         ),
       ),
