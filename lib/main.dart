@@ -49,63 +49,67 @@ class _HomePageState extends State<HomePage> {
 
       bottomNavigationBar: _buildBottomNavigationBar(),
 
-      floatingActionButton: SizedBox(
-        height: 50,
-        width: 50,
-        child: FloatingActionButton(
-          onPressed: () {},
-          backgroundColor: const Color(0xFFE95E1A),
-          elevation: 2,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(50),
-          ),
-          child: const Icon(
-            Icons.qr_code_scanner,
-            color: Colors.white,
-            size: 26,
-          ),
-        ),
-      ),
+      floatingActionButton: SizedBox(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 
   Widget _buildBottomNavigationBar() {
-    return BottomAppBar(
-      color: Colors.white,
-      shape: const CircularNotchedRectangle(),
-      notchMargin: 4.0,
-      child: Container(
-        padding: const EdgeInsets.only(top: 8.0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Expanded(child: _buildNavItem(Icons.home, 'Beranda', true)),
-            Expanded(
-              child: _buildNavItem(Icons.swap_horiz, 'Bayar/Transfer', false),
-            ),
-            const Expanded(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Text(
-                    'QRIS',
-                    style: TextStyle(fontSize: 10, color: Colors.grey),
+    return Container(
+      height: 85,
+      decoration: const BoxDecoration(
+        color: Colors.white,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black12,
+            blurRadius: 4,
+            offset: Offset(0, -2),
+          ),
+        ],
+      ),
+      padding: const EdgeInsets.only(top: 8.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Expanded(child: _buildNavItem(Icons.home, 'Beranda', true)),
+          Expanded(
+            child: _buildNavItem(Icons.swap_horiz, 'Bayar/Transfer', false),
+          ),
+          Expanded(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Container(
+                  height: 50,
+                  width: 50,
+                  decoration: const BoxDecoration(
+                    color: Color(0xFFE95E1A),
+                    shape: BoxShape.circle,
                   ),
-                  SizedBox(height: 4),
-                ],
-              ),
+                  child: const Icon(
+                    Icons.qr_code_scanner,
+                    color: Colors.white,
+                    size: 26,
+                  ),
+                ),
+                SizedBox(height: 4),
+                Text(
+                  'QRIS',
+                  style: TextStyle(fontSize: 10, color: Colors.grey),
+                ),
+                SizedBox(height: 4),
+              ],
             ),
-            Expanded(
-              child: _buildNavItem(
-                Icons.monetization_on_outlined,
-                'Deposito',
-                false,
-              ),
+          ),
+          Expanded(
+            child: _buildNavItem(
+              Icons.monetization_on_outlined,
+              'Deposito',
+              false,
             ),
-            Expanded(child: _buildNavItem(Icons.person_outline, 'Saya', false)),
-          ],
-        ),
+          ),
+          Expanded(child: _buildNavItem(Icons.person_outline, 'Saya', false)),
+        ],
       ),
     );
   }
