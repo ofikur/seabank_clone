@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../components/custom_button_nav.dart';
+import '../components/profile_header.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -15,6 +16,7 @@ class _HomePageState extends State<HomePage> {
       body: SafeArea(
         child: ListView(
           children: const [
+            ProfileHeader(),
             SizedBox(height: 300),
             Center(
               child: Text(
