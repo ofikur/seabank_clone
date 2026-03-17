@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../components/custom_button_nav.dart';
 import '../components/profile_header.dart';
+import '../components/balance_card.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -17,6 +18,8 @@ class _HomePageState extends State<HomePage> {
         child: ListView(
           children: const [
             ProfileHeader(),
+            SizedBox(height: 8),
+            BalanceCard(),
             SizedBox(height: 300),
             Center(
               child: Text(
