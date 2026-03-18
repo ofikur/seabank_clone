@@ -96,21 +96,21 @@ class MainMenu extends StatelessWidget {
             if (badge != null)
               Positioned(
                 top: -6,
-                right: -16,
+                right: -28,
                 child: Container(
                   padding: const EdgeInsets.symmetric(
                     horizontal: 4,
-                    vertical: 2,
+                    vertical: 1.5,
                   ),
                   decoration: BoxDecoration(
-                    color: const Color(0xFFFFF4E6),
+                    color: const Color.fromARGB(255, 253, 215, 111),
                     borderRadius: BorderRadius.circular(4),
                   ),
                   child: Text(
                     badge,
                     style: const TextStyle(
-                      color: Color(0xFFFF5E00),
-                      fontSize: 9,
+                      color: Color.fromARGB(255, 71, 52, 42),
+                      fontSize: 11,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -122,7 +122,7 @@ class MainMenu extends StatelessWidget {
         Text(
           title,
           textAlign: TextAlign.center,
-          style: const TextStyle(fontSize: 12, color: Colors.black87),
+          style: const TextStyle(fontSize: 14, color: Colors.black87),
         ),
       ],
     );
