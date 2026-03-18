@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../components/custom_button_nav.dart';
 import '../components/profile_header.dart';
 import '../components/balance_card.dart';
+import '../components/main_menu.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -20,6 +21,7 @@ class _HomePageState extends State<HomePage> {
             ProfileHeader(),
             SizedBox(height: 2),
             BalanceCard(),
+            MainMenu(),
             SizedBox(height: 300),
             Center(
               child: Text(
