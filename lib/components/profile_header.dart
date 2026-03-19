@@ -12,7 +12,7 @@ class ProfileHeader extends StatelessWidget {
           const CircleAvatar(
             radius: 20,
             backgroundColor: Colors.grey,
-            child: Icon(Icons.person, color: Colors.white),
+            backgroundImage: AssetImage('assets/images/profile.jpg'),
           ),
           const SizedBox(width: 8),
 
@@ -32,7 +32,7 @@ class ProfileHeader extends StatelessWidget {
                 Row(
                   children: [
                     const Text(
-                      'No. Rekening: 9018 9518 6482',
+                      'No. Rekening: 9018 **** 6482',
                       style: TextStyle(fontSize: 15, color: Colors.grey),
                     ),
                     const SizedBox(width: 4),
