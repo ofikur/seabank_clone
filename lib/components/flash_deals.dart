@@ -9,7 +9,7 @@ class FlashDeals extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
       child: Container(
         clipBehavior: Clip.hardEdge,
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 14.0),
         decoration: BoxDecoration(
           gradient: const LinearGradient(
             colors: [Color.fromARGB(255, 255, 232, 212), Colors.white],
