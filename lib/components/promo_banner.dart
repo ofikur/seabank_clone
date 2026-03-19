@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 
 class PromoBanner extends StatelessWidget {
-  const PromoBanner({super.key});
+  final double height;
+
+  const PromoBanner({
+    super.key,
+    this.height = 80,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -10,14 +15,14 @@ class PromoBanner extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(10.0),
         child: Container(
-          height: 80,
+          height: height,
           width: double.infinity,
           decoration: const BoxDecoration(
             color: Color.fromARGB(255, 255, 94, 0),
           ),
           child: const Center(
             child: Text(
-              'GAMBAR BANNER PROMO',
+              'BANNER PROMO',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
