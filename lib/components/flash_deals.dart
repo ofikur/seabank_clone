@@ -26,21 +26,21 @@ class FlashDeals extends StatelessWidget {
                 const Icon(
                   Icons.timer_outlined,
                   color: Color.fromARGB(255, 255, 94, 0),
-                  size: 18,
+                  size: 21,
                 ),
-                const SizedBox(width: 4),
+                const SizedBox(width: 3),
                 const Text(
                   'Deposito Flash Deals',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontStyle: FontStyle.italic,
-                    fontSize: 14,
+                    fontSize: 17,
                   ),
                 ),
                 const Spacer(),
                 const Text(
-                  'Dimulai Ddalam',
-                  style: TextStyle(fontSize: 10, color: Colors.grey),
+                  'Dimulai dalam',
+                  style: TextStyle(fontSize: 12, color: Colors.grey),
                 ),
                 const SizedBox(width: 8),
                 _buildTimeBox('07', 'JAM'),
@@ -74,14 +74,14 @@ class FlashDeals extends StatelessWidget {
                           'Jangan Lewatkan 🔥',
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 12,
+                            fontSize: 15,
                           ),
                         ),
                         const SizedBox(height: 8),
                         RichText(
                           text: const TextSpan(
                             style: TextStyle(
-                              fontSize: 11,
+                              fontSize: 13,
                               color: Color.fromARGB(255, 97, 97, 97),
                               height: 1.4,
                             ),
@@ -102,6 +102,8 @@ class FlashDeals extends StatelessWidget {
                       ],
                     ),
                   ),
+
+                  const SizedBox(width: 12),
 
                   _buildDealCard('12 bulan', '7.5', '6% p.a.', '100 kuota'),
                   const SizedBox(width: 12),
@@ -139,7 +141,7 @@ class FlashDeals extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 2),
-        Text(label, style: const TextStyle(fontSize: 8, color: Colors.grey)),
+        Text(label, style: const TextStyle(fontSize: 10, color: Colors.grey)),
       ],
     );
   }
@@ -163,9 +165,9 @@ class FlashDeals extends StatelessWidget {
         children: [
           Text(
             tenor,
-            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
           ),
-          const SizedBox(height: 4),
+          const SizedBox(height: 2),
           Row(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
@@ -174,15 +176,18 @@ class FlashDeals extends StatelessWidget {
                 style: const TextStyle(
                   color: Color.fromARGB(255, 255, 94, 0),
                   fontWeight: FontWeight.bold,
-                  fontSize: 22,
+                  fontSize: 30,
                 ),
               ),
-              const Text(
-                '% p.a.',
-                style: TextStyle(
-                  color: Color.fromARGB(255, 255, 94, 0),
-                  fontWeight: FontWeight.bold,
-                  fontSize: 12,
+              const Padding(
+                padding: EdgeInsets.only(bottom: 3.0),
+                child: Text(
+                  '% p.a.',
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 255, 94, 0),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
                 ),
               ),
             ],
@@ -190,20 +195,20 @@ class FlashDeals extends StatelessWidget {
           Text(
             oldRate,
             style: const TextStyle(
-              fontSize: 10,
+              fontSize: 16,
               color: Colors.grey,
               decoration: TextDecoration.lineThrough,
             ),
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: 2),
           Text(
             quota,
             style: const TextStyle(
               color: Color.fromARGB(255, 255, 94, 0),
-              fontSize: 10,
+              fontSize: 16,
             ),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 8),
           Container(
             width: double.infinity,
             padding: const EdgeInsets.symmetric(vertical: 6),
@@ -216,8 +221,7 @@ class FlashDeals extends StatelessWidget {
               'Ingatkan Saya',
               style: TextStyle(
                 color: Color.fromARGB(255, 255, 94, 0),
-                fontSize: 12,
-                fontWeight: FontWeight.bold,
+                fontSize: 17,
               ),
             ),
           ),
