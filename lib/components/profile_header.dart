@@ -47,17 +47,43 @@ class ProfileHeader extends StatelessWidget {
             ),
           ),
 
-          Container(
-            padding: const EdgeInsets.all(6),
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              border: Border.all(color: Colors.grey.shade300),
-            ),
-            child: const Icon(
-              Icons.notifications_none,
-              size: 24,
-              color: Colors.black87,
-            ),
+          Stack(
+            clipBehavior: Clip.none,
+            children: [
+              Container(
+                padding: const EdgeInsets.all(6),
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(color: Colors.grey.shade300),
+                ),
+                child: const Icon(
+                  Icons.notifications_none,
+                  size: 24,
+                  color: Colors.black87,
+                ),
+              ),
+              Positioned(
+                right: -5,
+                top: -5,
+                child: Container(
+                  padding: const EdgeInsets.all(6),
+                  decoration: const BoxDecoration(
+                    color: Color.fromARGB(255, 255, 94, 0),
+                    shape: BoxShape.circle,
+                  ),
+                  alignment: Alignment.center,
+                  child: const Text(
+                    '1',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 10,
+                      fontWeight: FontWeight.bold,
+                      height: 1.0,
+                    ),
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
       ),
