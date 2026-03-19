@@ -17,7 +17,12 @@ class TransactionHistory extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 14.0, bottom: 9.0),
+              padding: const EdgeInsets.only(
+                left: 16.0,
+                right: 16.0,
+                top: 14.0,
+                bottom: 9.0,
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -29,7 +34,11 @@ class TransactionHistory extends StatelessWidget {
                       color: Colors.black87,
                     ),
                   ),
-                  Icon(Icons.chevron_right, color: Colors.grey.shade500, size: 20),
+                  Icon(
+                    Icons.chevron_right,
+                    color: Colors.grey.shade500,
+                    size: 20,
+                  ),
                 ],
               ),
             ),
@@ -76,7 +85,11 @@ class TransactionHistory extends StatelessWidget {
                     style: TextStyle(fontSize: 16, color: Colors.grey.shade600),
                   ),
                   const SizedBox(width: 4),
-                  Icon(Icons.chevron_right, color: Colors.grey.shade400, size: 16),
+                  Icon(
+                    Icons.chevron_right,
+                    color: Colors.grey.shade400,
+                    size: 16,
+                  ),
                 ],
               ),
             ),
@@ -129,13 +142,15 @@ class TransactionHistory extends StatelessWidget {
               ],
             ),
           ),
-          
+
           Text(
             amount,
             style: TextStyle(
-              fontSize: 18,
+              fontSize: 19,
               fontWeight: FontWeight.bold,
-              color: isIncome ? const Color.fromARGB(255, 0, 165, 80) : Colors.black87,
+              color: isIncome
+                  ? const Color.fromARGB(255, 0, 165, 80)
+                  : Colors.black87,
             ),
           ),
         ],

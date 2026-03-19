@@ -17,7 +17,12 @@ class ConnectedEwallet extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Padding(
-              padding: EdgeInsets.only(left: 16.0, right: 16.0, top: 14.0, bottom: 9.0),
+              padding: EdgeInsets.only(
+                left: 16.0,
+                right: 16.0,
+                top: 14.0,
+                bottom: 9.0,
+              ),
               child: Text(
                 'E-Wallet Terhubung',
                 style: TextStyle(
@@ -127,7 +132,9 @@ class ConnectedEwallet extends StatelessWidget {
                       subtitle,
                       style: TextStyle(
                         fontSize: 15,
-                        fontWeight: isAction ? FontWeight.w600 : FontWeight.bold,
+                        fontWeight: isAction
+                            ? FontWeight.w600
+                            : FontWeight.bold,
                         color: isAction
                             ? const Color.fromARGB(255, 255, 94, 0)
                             : Colors.black87,
@@ -139,8 +146,8 @@ class ConnectedEwallet extends StatelessWidget {
                         Icons.chevron_right,
                         size: 16,
                         color: Color.fromARGB(255, 255, 94, 0),
-                      )
-                    ]
+                      ),
+                    ],
                   ],
                 ),
               ],
