@@ -6,7 +6,7 @@ class ConnectedEwallet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 6.0),
       child: Container(
         decoration: BoxDecoration(
           color: Colors.white,
@@ -17,7 +17,7 @@ class ConnectedEwallet extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Padding(
-              padding: EdgeInsets.only(left: 16.0, right: 16.0, top: 16.0, bottom: 9.0),
+              padding: EdgeInsets.only(left: 16.0, right: 16.0, top: 14.0, bottom: 9.0),
               child: Text(
                 'E-Wallet Terhubung',
                 style: TextStyle(

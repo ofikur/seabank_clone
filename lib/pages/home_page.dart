@@ -7,6 +7,7 @@ import '../components/info_banner.dart';
 import '../components/promo_banner.dart';
 import '../components/flash_deals.dart';
 import '../components/connected_ewallet.dart';
+import '../components/transaction_history.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -30,6 +31,7 @@ class _HomePageState extends State<HomePage> {
             PromoBanner(),
             FlashDeals(),
             ConnectedEwallet(),
+            TransactionHistory(),
             SizedBox(height: 300),
             Center(
               child: Text(
