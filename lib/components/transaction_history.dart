@@ -58,7 +58,7 @@ class TransactionHistory extends StatelessWidget {
             _buildTransactionItem(
               icon: Icons.person,
               title: 'Dompet Anak Bangsa',
-              type: 'Tranfer',
+              type: 'Transfer',
               date: '27 Jan 2026, 18:55',
               amount: '+Rp 9.644.000',
               isIncome: true,

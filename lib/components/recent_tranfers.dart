@@ -27,7 +27,7 @@ class RecentTranfers extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const Text(
-                    'Tranfer Terakhir',
+                    'Transfer Terakhir',
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -52,7 +52,7 @@ class RecentTranfers extends StatelessWidget {
               subtitle: 'Gopay 0822****2211',
             ),
             Divider(height: 1, thickness: 1, color: Colors.grey.shade100),
-            
+
             _buildTranferItem(
               icon: Icons.person,
               iconColor: Colors.grey.shade300,
@@ -92,21 +92,18 @@ class RecentTranfers extends StatelessWidget {
           Container(
             width: 33,
             height: 33,
-            decoration: BoxDecoration(
-              color: iconColor,
-              shape: BoxShape.circle,
-            ),
+            decoration: BoxDecoration(color: iconColor, shape: BoxShape.circle),
             alignment: Alignment.center,
             child: icon != null
-              ? Icon(icon, color: Colors.white, size: 22)
-              : Text(
-                iconText ?? '',
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
+                ? Icon(icon, color: Colors.white, size: 22)
+                : Text(
+                    iconText ?? '',
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
           ),
           const SizedBox(width: 12),
 
@@ -145,7 +142,10 @@ class RecentTranfers extends StatelessWidget {
                     Expanded(
                       child: Text(
                         subtitle,
-                        style: TextStyle(fontSize: 17, color: Colors.grey.shade600),
+                        style: TextStyle(
+                          fontSize: 17,
+                          color: Colors.grey.shade600,
+                        ),
                         overflow: TextOverflow.ellipsis,
                       ),
                     ),
