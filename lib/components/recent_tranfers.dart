@@ -120,24 +120,12 @@ class RecentTranfers extends StatelessWidget {
                 Row(
                   children: [
                     if (isSeaBank) ...[
-                      Container(
+                      Image.asset(
+                        'assets/images/seabank_logo.png',
                         width: 15,
                         height: 15,
-                        decoration: const BoxDecoration(
-                          color: Color.fromARGB(255, 255, 94, 0),
-                          shape: BoxShape.circle,
-                        ),
-                        alignment: Alignment.center,
-                        child: const Text(
-                          'S',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 10,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
                       ),
-                      const SizedBox(width: 6),
+                      const SizedBox(width: 4),
                     ],
                     Expanded(
                       child: Text(
